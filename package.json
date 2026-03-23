@@ -1,0 +1,27 @@
+{
+  "name": "slidev-theme-techtown",
+  "version": "1.0.0",
+  "description": "A Slidev theme for TechTown - Cloud & AI expertise",
+  "author": "TechTown",
+  "license": "MIT",
+  "keywords": [
+    "slidev-theme",
+    "slidev"
+  ],
+  "slidev": {
+    "colorSchema": "both",
+    "defaults": {
+      "fonts": {
+        "sans": "Poppins",
+        "weights": "300,400,500,600,700"
+      },
+      "transition": "slide-left"
+    }
+  },
+  "engines": {
+    "slidev": ">=0.48.0"
+  },
+  "devDependencies": {
+    "@slidev/cli": "^52.14.1"
+  }
+}
