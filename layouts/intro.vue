@@ -1,13 +1,18 @@
+<script setup>
+import logo from '../public/techtown-logo.svg?url'
+import noise from '../public/noise-light.png?url'
+</script>
+
 <template>
   <div class="slidev-layout intro">
     <div class="intro-left">
-      <img src="/techtown-logo.svg" alt="TechTown" class="intro-logo" />
+      <img :src="logo" alt="TechTown" class="intro-logo" />
       <div class="intro-text">
         <slot />
       </div>
     </div>
     <div class="intro-right">
-      <div class="intro-decoration" />
+      <div class="intro-decoration" :style="{ backgroundImage: `url(${noise})` }" />
     </div>
   </div>
 </template>
@@ -62,7 +67,6 @@
 .intro-decoration {
   position: absolute;
   inset: 0;
-  background-image: url(/noise-light.png);
   opacity: 0.15;
 }
 </style>
