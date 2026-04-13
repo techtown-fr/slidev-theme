@@ -1,8 +1,13 @@
+<script setup>
+import logo from '../public/techtown-logo.svg?url'
+import noise from '../public/noise-light.png?url'
+</script>
+
 <template>
   <div class="slidev-layout end">
-    <div class="end-bg" />
+    <div class="end-bg" :style="{ backgroundImage: `url(${noise})` }" />
     <div class="end-content">
-      <img src="/techtown-logo.svg" alt="TechTown" class="end-logo" />
+      <img :src="logo" alt="TechTown" class="end-logo" />
       <div class="end-text">
         <slot />
       </div>
@@ -28,7 +33,6 @@
 .end-bg {
   position: absolute;
   inset: 0;
-  background-image: url(/noise-light.png);
   opacity: 0.08;
   pointer-events: none;
 }
